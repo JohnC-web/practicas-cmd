@@ -1,0 +1,6 @@
+Ahora puedes hacer las siguientes modificaciones, cada una en una rama independiente:
+1. Cambiar el título de la web.
+2. Cambiar los colores del diseño.
+3. Añadir una tarjeta de Docker.
+4. Cambiar el texto del botón.
+Importante: el HTML tiene comentarios CAMBIO 1, CAMBIO 2 y CAMBIO 3 para indicar dónde realizar las modificaciones.
