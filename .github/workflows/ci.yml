@@ -19,13 +19,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Comprobar index.html
-        run: test -f index.html
+      -  run: test -f index.html
 
       - name: Comprobar Dockerfile
-        run: test -f dockerfile
+      -  run: test -f dockerfile
 
       - name: Construir imagen Docker
-        run: docker build -t aula-web:ci .
+        run: docker build -f dockerfile -t aula-web:ci .
 
       - name: Iniciar sesion en GHCR
         if: github.event_name == 'push'
@@ -41,4 +41,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/JC Bravo/aula-web-ci:latest
+          tags: ghcr.io/JohnC-web/aula-web-ci:latest
